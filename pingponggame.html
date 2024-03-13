@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pong - Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styling/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/blueCircle.png">
+    <style>
+      canvas {
+        border: 3px solid #FFF;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="game-title">Pong</p>
+    <p class="credit">By: Darrien Lam</p>
+    <div class="container">
+      <canvas id="canvas" width="600" height="400"></canvas>
+    </div>
+    <p id="score-alert">Welcome to Pong! First to 20 points.</p>
+    <div class="button">
+      <button id="start-btn" class="btn">Start</button>
+      <button id="pause-btn" class="btn">Pause</button>
+      <button id="restart-btn" class="btn">Restart</button>
+    </div>
+    <p class="control">Move your paddle with W and S</p>
+    <div class="modal" tabindex="-1" role="dialog" id="message-modal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 id="message"></h5>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="message-modal-close" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p id="reference"><a href="https://www.codewithfaraz.com/content/124/how-to-create-a-ping-pong-game-with-html-css-and-javascript">Tutorial followed to help write this page.</a></p>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>
